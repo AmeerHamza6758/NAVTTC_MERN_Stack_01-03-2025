@@ -1,0 +1,59 @@
+/* selctor {
+    property: 'value'
+} */
+/* Inline
+Internal
+External
+
+class .
+ID    #
+universal *{}
+element  p/h1
+ */
+
+* {
+   margin: 0px;
+   /* background-color: lightblue; */
+}
+
+.name {
+   color: blue;
+   /* background-color: greenyellow; */
+}
+
+.parent-section {
+   /* min-width: 500px;
+    max-width: 800px; */
+   /* height: 100px; */
+   width: 80vw;
+   /* height: 60vh; */
+   background-color: aqua;
+   /* border: 10px solid red; */
+   padding: 50px;
+   margin: 20px 40px;
+   /* padding-top: 10px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+    padding-right: 30px; */
+   /* padding-inline: 100px; */
+   /* padding-block: 50px; */
+   /* padding: 10px 50px 50px 100px; */
+}
+
+
+.backgroundProp {
+   height: 300px;
+   width: 80%;
+   margin: 20px;
+   padding: 20px;
+   /* background-color: rgba(150,100,100,1); */
+   /* background-color: #000; */
+   /* background-color: hsl(100, 100%, 50%); */
+   background-image: url('../Assets/download\ \(3\).jpeg');
+   border: 3px dashed blue;
+   background-repeat: no-repeat;
+   /* background-size: contain; */
+   /* background-attachment: fixed; */
+   overflow: auto;
+   background-position: center;
+}

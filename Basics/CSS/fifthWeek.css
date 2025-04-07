@@ -1,0 +1,24 @@
+.heading {}
+
+.paragraph {
+    font-size: 40px;
+    color: red;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: purple;
+}
+
+/* mobiles */
+@media screen and (min-width:320px) and (max-width:480px) {
+    .paragraph {
+        font-size: 10px;
+        color: blueviolet;
+        font-weight: bolder;
+    }
+}
+
+/* tablets */
+@media screen {}

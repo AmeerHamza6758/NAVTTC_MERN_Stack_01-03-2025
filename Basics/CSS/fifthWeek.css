@@ -1,4 +1,6 @@
-.heading {}
+.heading {
+    animation: textAnima 3s infinite alternate;
+}
 
 .paragraph {
     font-size: 40px;
@@ -6,9 +8,19 @@
 }
 
 .box {
+    border-bottom: 10px solid black;
+    margin: 200px;
+    width: 300px;
+    /* animation: colorChanger 2s ease-in-out infinite alternate; */
+}
+
+.bouncing {
     width: 200px;
     height: 200px;
-    background-color: purple;
+    background-color: red;
+    margin-left: 50px;
+    border-radius: 50%;
+    animation: colorChanger 2s infinite alternate;
 }
 
 /* mobiles */
@@ -22,3 +34,36 @@
 
 /* tablets */
 @media screen {}
+
+/* Animations */
+
+@keyframes colorChanger {
+    from {
+        background-color: red;
+        /* margin: 0px; */
+        transform: translateY(0);
+    }
+
+    to {
+        background-color: blue;
+        transform: translateY(-150px);
+    }
+}
+
+@keyframes textAnima {
+    0% {
+        color: blue;
+        font-size: 20px;
+        /* text-align: start; */
+    }
+    50% {
+        color: red;
+        font-size: 25px;
+        /* text-align: center; */
+    }
+    100% {
+        color: forestgreen;
+        font-size: 35px;
+        /* text-align: end; */
+    }
+}

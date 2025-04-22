@@ -245,6 +245,11 @@ const documentData = document.getElementById("heading")
 console.log('Document', documentData.textContent)
 
 // document.title ='Hello'
-documentData.innerText="Ameer Hamza"
+documentData.innerText = "Ameer Hamza"
 
 // https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/
+
+const todayDate = new Date()
+const month = todayDate.getMinutes()
+console.log('Today date is: ', todayDate);
+console.log('Here is month',month);

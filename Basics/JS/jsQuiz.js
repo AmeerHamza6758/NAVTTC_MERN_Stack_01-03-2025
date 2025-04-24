@@ -37,11 +37,11 @@ function findLargest(a, b, c) {
 
 // 4-Write a loop that adds all numbers from 1 to 10 and returns the total sum.
 function sumOfNumbers() {
+    let sum = 0;
     for (let item = 1; item < 10; item++) {
-        let sum = 0;
         sum += item
-        return sum
     }
+    return sum
 }
 console.log(sumOfNumbers());
 

@@ -77,7 +77,7 @@ switch (day) {
         console.log('Modnay');
         break;
     case 2:
-        console.log('Tuesday');
+        // console.log('Tuesday');
         break;
     case 3:
         console.log('Wednesday');
@@ -107,12 +107,11 @@ switch (day) {
 // }
 // addingValues()
 
-console.log('------------------------------');
 
 // addingValues()
 
-console.log("Top part")
-console.log('Bottom Part')
+// console.log("Top part")
+// console.log('Bottom Part')
 
 
 // Hoisting
@@ -138,20 +137,20 @@ const unNamedFunc = () => {
     return sum
 }
 
-console.log(unNamedFunc());
+// console.log(unNamedFunc());
 
 // Parameterized functions
 function ageYearCalculator(age) {
     // STatements
     const currentYear = 2025
     let calculatedAge = currentYear - age;
-    console.log(`You are ${calculatedAge} years OLD.`);
+    // console.log(`You are ${calculatedAge} years OLD.`);
     return calculatedAge;
 }
 let userAge = 2003;
-ageYearCalculator(userAge)
+// ageYearCalculator(userAge)
 let calculatedUserAge = ageYearCalculator(2000)
-console.log(calculatedUserAge, "The calculated Age...");
+// console.log(calculatedUserAge, "The calculated Age...");
 
 
 // Loops
@@ -242,7 +241,7 @@ let end = 10;
 
 // DOM Manipulation
 const documentData = document.getElementById("heading")
-console.log('Document', documentData.textContent)
+// console.log('Document', documentData.textContent)
 
 // document.title ='Hello'
 documentData.innerText = "Ameer Hamza"
@@ -251,5 +250,169 @@ documentData.innerText = "Ameer Hamza"
 
 const todayDate = new Date()
 const month = todayDate.getMinutes()
-console.log('Today date is: ', todayDate);
-console.log('Here is month',month);
+// console.log('Today date is: ', todayDate);
+// console.log('Here is month', month);
+
+
+//String And Number Methods
+
+let string = 'hello World';
+// object.method()
+console.log(string.toLowerCase());
+console.log(string.toUpperCase());
+
+let username = 'user@gmail.com'
+if (!username.includes('@')) {
+    console.log('You are not registered..!');
+}
+console.log(username.length);
+
+console.log(string);
+
+let triString = string.trim()
+console.log(triString)
+
+console.log(string.charAt(2));
+console.log(string.lastIndexOf('l'))
+console.log(string.split(' '));
+console.log(string.slice(1, 9));
+
+let first_name = "Ameer";
+let last_name = "Hamza"
+let full_name = first_name.concat(last_name)
+
+console.log(full_name);
+
+// Number Methods
+let marks = "abc"
+let result = parseFloat(marks) + 100
+console.log(result.toFixed(2));
+
+// console.log(Number(marks));
+
+// Math Methods
+// floor, ceil, round, max, min, trunc
+let numbers = 11.034
+// let resp = Math.ceil(numbers) //upper
+// let resp = Math.floor(numbers) //lower
+// let resp = Math.round(numbers)
+// let resp = Math.trunc(numbers)
+
+// console.log(resp);
+
+
+
+// Events in JS
+
+// onclick :Triggered when an element is clicked.
+// onmouseover:Fired when the mouse pointer moves over an element.
+// onmouseout:Occurs when the mouse pointer leaves an element.
+// onchange:Triggered when the value of an input element changes.
+// onmousemove:
+
+
+
+// let btn = document.getElementById("xyz")
+// // console.log(btn.textContent)
+// btn.addEventListener("mousemove", function () { alert("This button is Clicked...1") })
+
+// let count = 0
+// let countValues = document.getElementById("count")
+// function addToCart() {
+//     alert('Add')
+// }
+// function removeToCart() {
+//     alert("Remove")
+// }
+
+// Array Methods
+let basketPrices = [10, 20, 30, 40, 50]
+
+// forEach
+
+// basketPrices.forEach((item) => (
+//     // console.log('For',item * 2)
+// ))
+
+// Push()
+console.log(basketPrices);
+basketPrices.push(60, 70)
+console.log(basketPrices);
+
+// unShift()
+basketPrices.unshift(5)
+console.log(basketPrices);
+
+// POP()
+basketPrices.pop()
+console.log(basketPrices);
+// shift
+basketPrices.shift()
+console.log(basketPrices);
+
+// Slice
+// let studentsName = ["Ahmed", "Ali", "Meer", "Fahad", "Zorain", "Waleed", "Aalyan"]
+// let newArray = studentsName.slice(2, 5)
+// console.log(newArray);
+
+//Splice
+// studentsName.splice(5,3)
+// console.log(studentsName);
+
+//concat
+let array1 = [1, 2, 3, [4, [5, 6]]]
+let array2 = [4, 5, 6]
+
+// let array3 = array1.concat(array2)
+// console.log(array3);
+
+// Flat
+// console.log(array1.flat(2));
+
+// Includes
+
+let studentsName = ["Ahmed", "Waleed", "Ali", "Meer", "Fahad", "Zorain", "Waleed", "Aalyan"]
+
+console.log(studentsName.includes("Meer"));
+
+// IndexOf()
+console.log(studentsName.indexOf("Waleed"));
+
+//lastIndexOf
+console.log(studentsName.lastIndexOf("Waleed"));
+
+//sort()
+let sortArray = [1, 2, 3, 6, 5, 4]
+// let newSortArray = sortArray.sort()
+// console.log(newSortArray);
+
+// Reverse
+
+console.log(sortArray.reverse());
+
+// Join
+// console.log(studentsName.join("---"));
+
+let unitPrices = [5, 30, 40, 50, 20, 60]
+// every()
+let resulttt = unitPrices.every((items) => items > 10)
+
+console.log('Every Output', resulttt);
+
+let resultt = unitPrices.some((items) => items > 60)
+console.log('Some Output', resultt);
+
+// Find()
+
+// map()
+let mapArray = unitPrices.map((items) => items * 2)
+console.log("Mapped Array", mapArray);
+
+
+// forEach()
+let forEachArray = unitPrices.forEach((items) => items * 2)
+console.log('For Each Array', forEachArray);
+
+// filter
+let filteredArray = unitPrices.filter((items) => items > 30)
+console.log(filteredArray);

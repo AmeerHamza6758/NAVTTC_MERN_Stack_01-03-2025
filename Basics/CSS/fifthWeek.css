@@ -23,6 +23,38 @@
     animation: colorChanger 2s infinite alternate;
 }
 
+
+#xyz {
+    color: white;
+    background-color: gray;
+    border-radius: 10px;
+    padding: 20px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+
+}
+
+#xyz:hover {
+    color: greenyellow;
+    background-color: black;
+}
+
+#count {
+    font-size: 40px;
+    text-align: center;
+    color: brown;
+    font-weight: 800;
+}
+
+#add {
+    background-color: greenyellow;
+}
+
+#remove {
+    background-color: red;
+}
+
 /* mobiles */
 @media screen and (min-width:320px) and (max-width:480px) {
     .paragraph {
@@ -56,11 +88,13 @@
         font-size: 20px;
         /* text-align: start; */
     }
+
     50% {
         color: red;
         font-size: 25px;
         /* text-align: center; */
     }
+
     100% {
         color: forestgreen;
         font-size: 35px;

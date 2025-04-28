@@ -416,3 +416,89 @@ console.log('For Each Array', forEachArray);
 // filter
 let filteredArray = unitPrices.filter((items) => items > 30)
 console.log(filteredArray);
+
+
+// Object Methods.
+// keys
+// Values
+// Entries
+// add
+// delete
+// assign
+// freeze
+
+let studentObj = {
+    name: "John",
+    age: 20,
+    email: 'john@yopmail.co'
+}
+
+// studentObj.contact = 907654567
+// studentObj["contact"] = 907654567
+
+console.log(studentObj, 'New Object');
+
+// Find out Keys
+console.log('Key of an OBJ', Object.keys(studentObj));
+
+// Find Values
+console.log('Values of an OBJ', Object.values(studentObj));
+
+// Key-value pairs
+console.log('Key-value pairs', Object.entries(studentObj))
+
+// Freeze
+const Obj1 = {
+    name: "Obj-hun"
+}
+Object.freeze(Obj1)
+Obj1.name = 'Updated-hun'
+
+// Seal method
+Object.seal(Obj1)
+
+console.log(Obj1, 'Changed')
+
+let xyzz = function () {
+
+}
+
+const nn = 'hamza';
+
+console.log("Hey ${nn}")
+
+const { age, name, xyzzz } = studentObj;
+console.log(age, name, xyz)
+
+
+// Rest Parameter
+function myFunc(...a) {
+    console.log(a, 'Function console');
+}
+myFunc(1, 2, 3, 4, 5);
+
+const n = [1, 2, 3, 4, 5];
+const ne = [...n, 4, 5];
+console.log(ne);
+
+// Set Default parameters of function
+function defaulValueFunc(a = 10, b = 20) {
+    try {
+        console.log(aa, 'Try-Catch')
+    } catch (error) {
+        console.log(error, ' is error')
+    }
+}
+defaulValueFunc(50)
+
+// Try-catch
+// try {
+    
+// } catch (error) {
+    
+// }
+
+
+// promises
+//async await
+// fetch and axios CRUD

@@ -493,12 +493,38 @@ defaulValueFunc(50)
 
 // Try-catch
 // try {
-    
+
 // } catch (error) {
-    
 // }
 
 
 // promises
 //async await
 // fetch and axios CRUD
+
+// Api Integration
+
+//handle json data
+//support promises
+//crud methods
+//
+
+// function getAllProducts() {
+//     fetch('https://jsonplaceholder.typicode.com/users')
+//         .then((res) => res.json()).then((data) => console.log(data)).catch((error) => console.log(error))
+// }
+
+// async function getAllProducts() {
+//     try {
+//         const result = await fetch('https://jsonplaceholder.typicode.com/users')
+//         const resp =await result.json()
+//         // console.log(resp);
+//         return {status:true, resp}
+//     } catch (error) {
+//         console.log(error.message, 'Getting Error');
+//     }
+// }
+
+console.log('Hello');
+
+

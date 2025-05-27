@@ -1,24 +1,19 @@
 import { useState } from 'react'
 import './App.css'
 import Navbar from './components/Navbar'
+import Layout from './layout/layout'
+import Home from './pages/Home'
 import CompA from './components/CompA'
-import StudentForm from './components/StudentForm'
-import Sales from './pages/sales/Sales'
-import CompoB from './components/CompoB'
-import { Route } from 'react-router'
-import { Routes } from 'react-router'
-import { BrowserRouter } from 'react-router'
+import ProductsForm from './components/Products'
+
 
 function App() {
   return (
     <div>
-      <Navbar />
-      <Routes>
-        <Route index element={<StudentForm />} />
-        <Route element={<CompoB />} path='contact_us'></Route>
-        <Route element={<CompA />} path='sales'></Route>
-        {/* <Route element={ } path=''></Route> */}
-      </Routes>
+      <Layout/>     
+      {/* <ProductsForm/> */}
+      {/* <CompA /> */}
+      {/* <Home /> */}
     </div>
   )
 }

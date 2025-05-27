@@ -6,6 +6,7 @@ export const ContextProvider = ({ children }) => {
     const [username, setUsername] = useState('John Doe')
     const [classname, setClassname] = useState()
     const [count, setCount] = useState(0)
+    const [postsData, setPostsData] = useState([])
     function addToCart() {
         setCount(count + 1)
     }
@@ -16,7 +17,7 @@ export const ContextProvider = ({ children }) => {
 
     return (
         <>
-            < MyContext.Provider value={{ username, count, addToCart }} >{children}</MyContext.Provider >
+            < MyContext.Provider value={{ username, count, addToCart, postsData, setPostsData }} >{children}</MyContext.Provider >
         </>
     )
 }

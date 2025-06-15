@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { memo, useContext, useEffect, useState } from 'react'
 import CompoB from './CompoB'
 import { MyContext } from '../services/MyContext'
 import { useSelector } from 'react-redux'
@@ -23,11 +23,11 @@ function CompA() {
         <>
             <h1>Component A count is : {value}</h1>
             <h2>Name is : {name}</h2>
-            {/* {loading ? <h1>Loading...!</h1> :
-                <div>In COMPO A Username is : {username}</div>} */}
-            {/* <CompoB username={username} /> */}
+            {loading ? <h1>Loading...!</h1> :
+                <div>In COMPO A Username is : {username}</div>} 
+             <CompoB username={username} />
         </>
     )
 }
 
-export default CompA
+export default memo(CompA)
